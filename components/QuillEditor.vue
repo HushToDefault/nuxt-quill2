@@ -12,6 +12,8 @@
 
     <h1>------------</h1>
     <div style="width:300px">{{ content }}</div>
+        <v-btn @click="VueXText(content)">กด</v-btn>
+    
   </div>
 </template>
 
@@ -41,6 +43,9 @@ export default {
     };
   },
   methods: {
+    VueXText(content){
+          this.$store.dispatch("acTextEditer", content);
+    },
     testlog(x) {
       console.log("test", x);
     }
