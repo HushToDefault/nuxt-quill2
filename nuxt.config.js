@@ -43,7 +43,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    'vue2-editor/nuxt'
+    'vue2-editor/nuxt',
+    'dropzone-nuxt'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
