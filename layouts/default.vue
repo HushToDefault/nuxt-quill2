@@ -1,7 +1,19 @@
 <template>
-  <div>
-    <h1>{{ $store.getters.gettext }}</h1>
-    <div v-html="$store.getters.gettext"></div>
+  <v-app light>
+    <!-- <div class="d-flex justify-center flex-wrap width100">
+      <div class="width100 maxwidthf1920px">
+        <div>
+    <h1>{{ $store.getters.gettext }}</h1> -->
+    <div>
+      <h1>BTN TEST url</h1>
+          <v-btn to="/test1" small elevation="" color="">TEST1</v-btn>
+          <v-btn to="/test1/suptest1" small elevation="" color="">TESTSUP1</v-btn>
+          <v-btn to="/test2" small elevation="" color="">TEST2</v-btn>
+          <v-btn to="/test2/suptest2/test" small elevation="" color="">TESTSUP2</v-btn>
+          <v-btn to="/test3" small elevation="" color="">TEST3</v-btn>
+          <v-btn to="/" small elevation="" color="">Home</v-btn>
+    </div>
+    <!-- <div v-html="$store.getters.gettext"></div>
 
     <QuillEditor />
     <h1>-------------------------</h1>
@@ -18,7 +30,13 @@
     <v-btn @click="updataCreditUser()">droped</v-btn>
 
     <img style="width:100px" src="@/assets/101.webp" />
-  </div>
+  </div> -->
+        <nuxt />
+<!--         
+      </div>
+    </div> -->
+  </v-app>
+
 </template>
 
 <script>
